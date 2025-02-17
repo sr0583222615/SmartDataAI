@@ -3,10 +3,10 @@
 תוכנית זו מאפשרת לבצע ניתוחים מבוססי NLP על מסמכים מסוגים שונים (Excel, PDF, אתרי אינטרנט), תוך שילוב של מודלים חכמים מ-OpenAI לצורך הפקת תובנות ושאלות. ניתן להפעיל את התוכנית כקובץ EXE ישירות משורת הפקודה.
 
 ## דרישות מקדימות
+## מפתח API ל OpenAI
+
 
 לפני הריצה של התוכנית, יש לוודא כי קיימים המתקנים הבאים:
-
-### API Key של OpenAI:
 - עליך להחזיק מפתח API פעיל מ-OpenAI.
 - אם אין לך מפתח, היכנס לאתר OpenAI ויצור מפתח API אישי.
 - שמור את המפתח בקובץ טקסט בשם `api_key.txt`.
@@ -39,11 +39,16 @@ my_program.exe -i "file1.xlsx" "file2.pdf" "https://example.com" -q "question.tx
 דוגמה 1: הרצה עם קבצי PDF ו-Excel
 אם ברצונך לשאול שאלה על תוכן מתוך קובץ PDF ו-Excel, השתמש בפקודה הבאה:
 
+bash
+Copy
+Edit
 my_program.exe -i "document1.pdf" "data.xlsx" -q "question.txt" -o "response.txt" -k "api_key.txt"
 דוגמה 2: הרצה עם אתר אינטרנט
 אם ברצונך לשאול שאלה על תוכן מאתר אינטרנט, השתמש בפקודה הבאה:
 
-
+bash
+Copy
+Edit
 my_program.exe -i "https://example.com" -q "question.txt" -o "response.txt" -k "api_key.txt"
 איך התוכנית עובדת
 התוכנית טוענת את הקבצים שציינת (PDF, Excel או קישורים לאתרים) וממזגת את התוכן.
